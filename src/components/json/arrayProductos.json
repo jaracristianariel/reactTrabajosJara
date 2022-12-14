@@ -1,0 +1,15 @@
+[
+    {"id":1, "nombre":"Anillo de PLata", "descripcion":"Diamante Transparente", "img":"./Img/p001.png", "precio":12000, "stock":20, "categoria":"anillo-plata"},
+    {"id":2, "nombre":"Anillo de PLata", "descripcion":"Diamante Azul", "img":"./Img/p002.png", "precio":17600, "stock":20, "categoria":"anillo-plata"},
+    {"id":3, "nombre":"Anillo de PLata", "descripcion":"Diamante Verde Transparente", "img":"./Img/p003.png", "precio":18300, "stock":20, "categoria":"anillo-plata"},
+    {"id":4, "nombre":"Anillo de PLata", "descripcion":"Diamante Blanco", "img":"./Img/p004.png", "precio":28600, "stock":20, "categoria":"anillo-plata"},
+    {"id":5, "nombre":"Anillo de Plata", "descripcion":"Diamante Gold", "img":"./Img/p005.png", "precio":15000, "stock":20, "categoria":"anillo-plata"},
+    {"id":6, "nombre":"Anillo de PLata", "descripcion":"Diamante Corazon Rosa", "img":"./Img/p006.png", "precio":25000, "stock":20, "categoria":"anillo-plata"},
+    {"id":7, "nombre":"Anillo de PLata", "descripcion":"Piedra Rosa", "img":"./Img/p007.png", "precio":3600, "stock":20, "categoria":"anillo-plata"},
+    {"id":8, "nombre":"Anillo de Oro Blanco", "descripcion":"Diamante Blanco", "img":"./Img/o001.png", "precio":34000, "stock":20, "categoria":"anillo-oro"},
+    {"id":9, "nombre":"Anillo de Oro Rosa 18K", "descripcion":"Diamante Transparente", "img":"./Img/o002.png", "precio":29600, "stock":20, "categoria":"anillo-oro"},
+    {"id":10, "nombre":"Anillo de Oro Amarillo 14k", "descripcion":"Piedra verde", "img":"./Img/o003.png", "precio":22000, "stock":20, "categoria":"anillo-oro"},
+    {"id":11, "nombre":"Anillo de Oro", "descripcion":"Con Perla", "img":"./Img/o004.png", "precio":23000, "stock":20, "categoria":"anillo-oro"},
+    {"id":12, "nombre":"Anillo de Oro", "descripcion":"Diamante", "img":"./Img/o005.png", "precio":18000, "stock":20, "categoria":"anillo-oro"},
+    {"id":13, "nombre":"Anillo de Oro", "descripcion":"Diamante Blanco", "img":"./Img/o006.png", "precio":29200, "stock":20, "categoria":"anillo-oro"},
+    {"id":14, "nombre":"Anillo de Alianza", "descripcion":"Con Grabaciones", "img":"./Img/o007.png", "precio":19000, "stock":20, "categoria":"Anillo-oro"}]

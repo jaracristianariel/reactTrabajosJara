@@ -1,14 +1,14 @@
 body {
-  color: white;
-  background-color: grey;
+  color: rgb(6, 5, 5);
+  background-color: rgb(255, 255, 255);
 }
 
 .publiapp {
-  color: rgb(255, 253, 253);
+  color: rgb(220, 8, 8);
   background-color: rgb(0, 0, 0);
 }
 
 .footer {
-  color: rgb(0, 0, 0);
-  background-color: rgb(93, 101, 0);
+  color: rgba(0, 0, 0, 0.838);
+  background-color: rgb(255, 255, 255);
 }

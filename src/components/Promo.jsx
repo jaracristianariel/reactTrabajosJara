@@ -5,7 +5,7 @@ const Promo = () => {
         <div className="">
             <div className="row publiapp">
                 <div className="col-md-6">
-                    <img src={"img/camp01CH.jpg"} alt="campera hombre" width={500}/>
+                    <img src={"/img/camp01CH.jpg"} alt="campera hombre" width={500}/>
 
                 </div>
             
