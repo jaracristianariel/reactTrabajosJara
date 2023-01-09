@@ -4,7 +4,7 @@ import ItemDetail from "./ItemDetail";
 import arrayProductos from "./json/arrayProductos.json";
 
 const ItemDetailContainer = () => {
-    const [item, setItems] = useState({});
+    const [item, setItem] = useState({});
     const {id} = useParams();
 
     useEffect(() => {
@@ -14,7 +14,7 @@ const ItemDetailContainer = () => {
           }, 2000);
         });
         promesa.then((data) => {
-            setItems(data);
+            setItem(data);
         })
     }, [id]);
     return (

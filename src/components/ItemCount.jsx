@@ -3,7 +3,14 @@ import React, { useEffect, useState }  from "react";
 const ItemCount = ({cantidadStock}) => {
     const [counter, setCounter] = useState(1);
     const [stock, setStock] = useState(cantidadStock);
+
+    console.log("stock prop" + cantidadStock);
+    console.log("stock state" + stock);
     
+    useEffect(() => {
+        setStock(cantidadStock);
+    }, [cantidadStock])
+
     const sumarCantidad = () =>{
         if (counter < stock) {
             setCounter(counter + 1);

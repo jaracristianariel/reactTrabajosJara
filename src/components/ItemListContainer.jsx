@@ -20,10 +20,8 @@ const ItemListContainer = () => {
     }, [id]);
 
     return (
-
         <div className="container py-5">
-                <ItemList items={items}/>
-                
+                <ItemList items={items}/>                
         </div>
     )
 }
