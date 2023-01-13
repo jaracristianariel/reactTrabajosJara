@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import { CartContext } from "./context/CartContext";
 import { Link } from "react-router-dom";
-import Checkout from "./Checkout";
 
 const Cart = () => {
     const {cart, removeItem, clear, cartTotal, sumTotal} = useContext(CartContext);
@@ -11,7 +10,7 @@ const Cart = () => {
             <div className="container py-5">
                 <div className="row">
                     <div className="col-md-12 text-center">
-                        <div class="alert alert-danger" role="alert">
+                        <div className="alert alert-danger" role="alert">
                              NO SE ENCONTRATON PRODCUTOS
                         </div>
                         <Link to={"/"} className="btn">Volver al Inicio</Link>
@@ -25,7 +24,7 @@ const Cart = () => {
         <div className="container py-5">
             <div className="row">
                 <div className="col-md-12">
-                    <table class="table">
+                    <table className="table">
                         <thead>
                             <tr>
                                 <th scope="col" className="text-end" colSpan={5} ><Link onClick={clear} className="btn bg-secondary text-white" title="Vaciar Carrito">Vaciar Carrito</Link></th>

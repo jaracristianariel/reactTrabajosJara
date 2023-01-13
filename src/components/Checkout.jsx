@@ -1,6 +1,6 @@
 import { addDoc, collection, getFirestore } from "firebase/firestore";
-import React, { useContext } from "react";
-import { useState } from "react";
+import React, { useContext, useState } from "react";
+import { Navigate } from "react-router-dom";
 import { CartContext } from "./context/CartContext";
 
 const Checkout = () => {
@@ -34,26 +34,26 @@ const Checkout = () => {
                 <div className="col">
                     <form>
                         <div className="mb-3">
-                            <label for="nombre" className="form-label">Nombre</label>
+                            <label htmlFor="nombre" className="form-label">Nombre</label>
                             <input type="text" className="form-control" id="nombre" placeholder="Ingrese su Nombre" onInput={(e) => {setNombre(e.target.value)}} />
                         </div>
                         <div className="mb-3">
-                            <label for="email" className="form-label">Email</label>
+                            <label htmlFor="email" className="form-label">Email</label>
                             <input type="text" className="form-control" id="email" placeholder="Ingrese su Email" onInput={(e) => {setEmail(e.target.value)}} />
                         </div>
                         <div className="mb-3">
-                            <label for="telefono" className="form-label">Telefono</label>
+                            <label htmlFor="telefono" className="form-label">Telefono</label>
                             <input type="text" className="form-control" id="telefono" placeholder="Ingrese su Telefono" onInput={(e) => {setTelefono(e.target.value)}} />
                         </div>
                         <div className="mb-3">
-                            <label for="direccion" className="form-label">Direccion</label>
+                            <label htmlFor="direccion" className="form-label">Direccion</label>
                             <input type="text" className="form-control" id="direccion" placeholder="Ingrese su Direccion" onInput={(e) => {setDireccion(e.target.value)}} />
                         </div>                        
                         <button type="button" className="btn bg-secondary text-white" onClick={generarOrden}>Generar Orden</button>
                     </form>
                 </div>
                 <div className="col">
-                    <table class="table">
+                    <table className="table">
                         <tbody>
                             {cart.map(item => (
                                 <tr key={item.id}>
@@ -74,10 +74,7 @@ const Checkout = () => {
             </div>
             <div className="row my-5">
                 <div className="col text-center">
-                    {ordenId ? <div class="alert alert-warning" role="alert">
-                     <h3>Felicidades!</h3>
-                     <p>Tu Numero de Orden es: {ordenId}</p>
-                    </div> : "" };
+                    {ordenId ? <Navigate to={"/thankyou/" + ordenId} /> : ""}
                 </div>
             </div>
         </div>
