@@ -16,16 +16,16 @@ const NavBar = () => {
                             <div className="collapse navbar-collapse" id="navbarNav">
                                 <ul className="navbar-nav">
                                     <li className="nav-item">
-                                        <NavLink className="nav-link active" aria-current="page" to={"/category/nosotros"}>Nosotros</NavLink>
-                                    </li>
-                                    <li className="nav-item">
                                         <NavLink className="nav-link active" to={"/category/anillo-oro"}>Anillos de Oro</NavLink>
                                     </li>
                                     <li className="nav-item">
                                         <NavLink className="nav-link active" to={"/category/anillo-plata"}>Anillos de Plata</NavLink>
                                     </li>
                                     <li className="nav-item">
-                                        <NavLink className="nav-link active" to={"/category/mas"}>Mas</NavLink>
+                                        <NavLink className="nav-link active" to={"/category/pulsera-oro"}>Pulseras de Oro</NavLink>
+                                    </li>
+                                    <li className="nav-item">
+                                        <NavLink className="nav-link active" to={"/category/pulsera-plata"}>Pulseras de Plata</NavLink>
                                     </li>
                                 </ul>
                             </div>

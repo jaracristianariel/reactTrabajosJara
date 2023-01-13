@@ -1,18 +1,16 @@
 import React, { useEffect, useState }  from "react";
+import { Link } from "react-router-dom";
 
-const ItemCount = ({cantidadStock}) => {
+const ItemCount = ({stock, onAdd}) => {
     const [counter, setCounter] = useState(1);
-    const [stock, setStock] = useState(cantidadStock);
+    const [itemStock, setItemStock] = useState(stock);
+    const [vendido, setVendido] = useState(false);
 
-    console.log("stock prop" + cantidadStock);
-    console.log("stock state" + stock);
-    
-    useEffect(() => {
-        setStock(cantidadStock);
-    }, [cantidadStock])
+
+
 
     const sumarCantidad = () =>{
-        if (counter < stock) {
+        if (counter < itemStock) {
             setCounter(counter + 1);
         }        
     }
@@ -23,15 +21,16 @@ const ItemCount = ({cantidadStock}) => {
         }
     }
 
-    const onAdd = () =>{
-        if (counter <= stock) {
-            
-            setStock(stock - counter);
-            setCounter(0);
-            console.log("Agregaste " + counter + " productos al carrito");
-        }        
+    const addToCart = (quantity) =>{
+        setItemStock(itemStock - quantity);
+        setVendido(true);
+        onAdd(quantity);
+     
     }
 
+    useEffect(() => {
+        setItemStock(stock);
+    }, [stock])
 
 
     return (
@@ -47,7 +46,7 @@ const ItemCount = ({cantidadStock}) => {
             </div>
             <div className="row">
                 <div className="col-md-12">
-                    <button className="btn btn-outline-primary" onClick={onAdd}>Agregar Al Carrito</button>
+                    {vendido ? <Link to={"/cart"} className="btn btn-outline-primary">Terminar mi Compra</Link> : <button className="btn btn-outline-primary" onClick={() => {addToCart(counter)}}>Agregar Al Carrito</button>}
                 </div>
             </div>
         </div>
