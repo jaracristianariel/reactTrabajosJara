@@ -1,14 +1,20 @@
 body {
-  color: rgb(6, 5, 5);
+  color: rgb(53, 52, 52);
   background-color: rgb(255, 255, 255);
 }
 
 .publiapp {
-  color: rgb(220, 8, 8);
+  color: rgb(241, 192, 67);
   background-color: rgb(0, 0, 0);
 }
 
 .footer {
-  color: rgba(0, 0, 0, 0.838);
+  color: rgba(53, 52, 52);
   background-color: rgb(255, 255, 255);
 }
+
+.boton {
+  color: rgb(241, 192, 67);
+  background-color: rgb(53, 52, 52);
+}
+

@@ -6,9 +6,6 @@ const ItemCount = ({stock, onAdd}) => {
     const [itemStock, setItemStock] = useState(stock);
     const [vendido, setVendido] = useState(false);
 
-
-
-
     const sumarCantidad = () =>{
         if (counter < itemStock) {
             setCounter(counter + 1);
@@ -38,15 +35,18 @@ const ItemCount = ({stock, onAdd}) => {
             <div className="row mb-2">
                 <div className="col-md-12">
                     <div className="btn-group" role="group" aria-label="Basic outlined example">
-                        <button type="button" className="btn btn-outline-primary" onClick={restarCantidad}>-</button>
-                        <button type="button" className="btn btn-outline-primary">{counter}</button>
-                        <button type="button" className="btn btn-outline-primary" onClick={sumarCantidad}>+</button>
+                        <button type="button" className="btn boton" onClick={restarCantidad}>-</button>
+                        <button type="button" className="btn boton">{counter}</button>
+                        <button type="button" className="btn boton" onClick={sumarCantidad}>+</button>
                     </div>
                 </div>
             </div>
             <div className="row">
                 <div className="col-md-12">
-                    {vendido ? <Link to={"/cart"} className="btn btn-outline-primary">Terminar mi Compra</Link> : <button className="btn btn-outline-primary" onClick={() => {addToCart(counter)}}>Agregar Al Carrito</button>}
+                    {vendido ? <Link to={"/cart"} className="btn boton">Terminar mi Compra</Link> : <button className="btn boton" onClick={() => {addToCart(counter)}}>Agregar Al Carrito</button>}
+                </div>
+                <div>
+                    <Link to={"/"} className="btn boton m-2">Seguir Comprando</Link>
                 </div>
             </div>
         </div>

@@ -11,7 +11,6 @@ const ItemDetail = ({item}) => {
 
     }
 
-
     return (
         <div className="row my-5">
             <div className="col-md-6 offset-md-3 text-center">

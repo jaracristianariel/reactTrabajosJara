@@ -13,7 +13,7 @@ const Cart = () => {
                         <div className="alert alert-danger" role="alert">
                              NO SE ENCONTRATON PRODCUTOS
                         </div>
-                        <Link to={"/"} className="btn">Volver al Inicio</Link>
+                        <Link to={"/"} className="btn boton">Volver al Inicio</Link>
                     </div>
                 </div>
             </div>
@@ -27,7 +27,7 @@ const Cart = () => {
                     <table className="table">
                         <thead>
                             <tr>
-                                <th scope="col" className="text-end" colSpan={5} ><Link onClick={clear} className="btn bg-secondary text-white" title="Vaciar Carrito">Vaciar Carrito</Link></th>
+                                <th scope="col" className="text-end" colSpan={5} ><Link onClick={clear} className="btn boton" title="Vaciar Carrito">Vaciar Carrito</Link></th>
                             </tr>
                             <tr>
                                 <th scope="col">&nbsp;</th>
@@ -51,7 +51,7 @@ const Cart = () => {
                                 <td colSpan={2}>&nbsp;</td>
                                 <td className="text-center">Suma Total</td>
                                 <td className="text-center"><b>${sumTotal()}</b></td>
-                                <td className="text-end"><Link to={"/Checkout"} className="btn bg-secondary text-white" title="Finalizar Compra">Finalizar Compra</Link></td>
+                                <td className="text-end"><Link to={"/Checkout"} className="btn boton" title="Finalizar Compra">Finalizar Compra</Link></td>
                             </tr>
                         </tbody>
                     </table>

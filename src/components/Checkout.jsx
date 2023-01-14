@@ -49,7 +49,7 @@ const Checkout = () => {
                             <label htmlFor="direccion" className="form-label">Direccion</label>
                             <input type="text" className="form-control" id="direccion" placeholder="Ingrese su Direccion" onInput={(e) => {setDireccion(e.target.value)}} />
                         </div>                        
-                        <button type="button" className="btn bg-secondary text-white" onClick={generarOrden}>Generar Orden</button>
+                        <button type="button" className="btn boton" onClick={generarOrden}>Generar Orden</button>
                     </form>
                 </div>
                 <div className="col">

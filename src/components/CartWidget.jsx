@@ -8,7 +8,7 @@ const CartWidget = () => {
 
     return cartTotal() ? <Link to={"/Cart"} className="btn position-relative" title="Ir al Carrito">        
             <img src={"/img/carrito.svg"} alt={"carrito"} width={30}/>
-            <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{cartTotal()}</span>
+            <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill boton">{cartTotal()}</span>
         </Link> : "";
 
     
